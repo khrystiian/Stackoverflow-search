@@ -152,7 +152,7 @@ export class StackComponent implements OnInit {
   private _filterStates(value: string): State[] {
     const filterValue = value.toLowerCase();
     //Call the service
-      //TO DO 
+      //TO DO -- call the backend
 
     return this.states.filter(state => state.name.toLowerCase().indexOf(filterValue) === 0);
   }
