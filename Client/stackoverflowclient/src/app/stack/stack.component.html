@@ -1,0 +1,100 @@
+<div class="pos-f-t" style="overflow:no-content">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4" style="background-color:#4b6eac !important">
+      <div class="row">
+        <div class="col-md-2">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white">
+            <span style="font-size:small">Order results:</span>
+          </a>
+          <mat-radio-group name="radioOpt1" [(ngModel)]="searchModel.orderResults" (change)="orderChange($event)" class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <mat-radio-button class="dropdown-item" *ngFor="let order of orderList" [value]="order" style="font-size:small">{{order}}</mat-radio-button>
+          </mat-radio-group>
+          <h6 style="color:white;font-size:small">Your search is ordered {{searchModel.orderResults}}</h6>
+        </div>
+
+        <div class="col-md-2">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white">
+            <span style="font-size:small">Sort results:</span>
+          </a>
+          <mat-radio-group name="radioOpt2" [(ngModel)]="searchModel.sortResults" (change)="sortChange($event)" class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <mat-radio-button class="dropdown-item" *ngFor="let sort of sortList" [value]="sort" style="font-size:small">{{sort}}</mat-radio-button>
+          </mat-radio-group>
+          <h6 style="color:white;font-size:small">Your search is sorted by {{searchModel.sortResults}}</h6>
+        </div>
+        <div class="col-md-4"><h4 style="color:#E0F2F7;text-align:center;margin-right:30px">Stackoverflow search engine !</h4></div>
+        <div class="col-md-2">
+          <input type="date"
+                 placeholder="Search creation date"
+                 [ngModel]="dt | date:'yyyy-MM-dd'"
+                 (ngModelChange)="creationDate($event)"
+                 [value]="date| date:'yyyy-MM-dd'"
+                 style="border-radius:25px;background-color:#E0F2F7;" >
+        </div>
+
+        <div class="col-md-2">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white">
+            <span style="font-size:small">Search options:</span>
+          </a>
+          <mat-radio-group name="radioOpt3" [(ngModel)]="searchModel.searchOption" (change)="optionChange($event)" class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <mat-radio-button class="dropdown-item" *ngFor="let opt of optionList" [value]="opt" style="font-size:small">{{opt}}</mat-radio-button>
+          </mat-radio-group>
+          <h6 style="color:white;font-size:small">Results option: {{searchModel.searchOption}}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark" style="background-color:#4b6eac !important;">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <form class="form-inline my-2 my-lg-0" style="width:110%; margin-top:10px !important;margin-bottom:10px !important">
+        <input matInput class="form-control mr-sm-2"
+               type="search"
+               id="searchInput"
+               placeholder="Search"
+               aria-label="Search"
+               [matAutocomplete]="auto"
+               [formControl]="stateCtrl"
+               data-toggle="collapse"
+               data-target="#navbarToggleExternalContent"
+               aria-controls="navbarToggleExternalContent"
+               aria-expanded="false"
+               style="width:85%;background-color:#E0F2F7;border-radius: 25px;"
+               value={{value}}
+               (input)="onInputChange($event)">
+
+        <a href="#" (click)="openVirtualKeyboard()">
+          <i class="fa fa-keyboard" style="position:relative;right:60px"></i>
+        </a>
+
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let state of filteredStates | async" [value]="state.name" style="background-color:#b3bccb;height:auto!important">
+            <div class="container" style="margin-top:15px !important;background-color:white">
+              <div class="row" style="">
+                <div class="col-md-8" style="margin-top:5px;margin-bottom:5px">
+                  <span>{{state.name}}</span> | <small>Population: {{state.population}}</small>
+                  <br />
+                  <span>{{state.name}}</span> | <small>Population: {{state.population}}</small>
+                  <br />
+                </div>
+                <div class="col-md-4" style="margin-top:5px;margin-bottom:5px">
+                  <img class="example-option-img" aria-hidden="true" [src]="state.flag" height="100" style="float:left">
+                </div>
+              </div>
+            </div>
+          </mat-option>
+        </mat-autocomplete>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </nav>
+</div>
+<div class="example-box" cdkDrag id="simpleVirtualKeyboard" hidden>
+  <h4 style="position:absolute;top:0;color:#ccc;left:10px">Virtual keyboard</h4>
+  <div class="simple-keyboard" id="simpleKeyboard"></div>
+  <div class="example-handle" cdkDragHandle>
+    <svg width="24px" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"></path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </svg>
+  </div>
+</div>
