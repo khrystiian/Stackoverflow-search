@@ -1,9 +1,6 @@
 ﻿using Nest;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace API
+namespace BusinessLayer
 {
     public interface IElasticsearch
     {

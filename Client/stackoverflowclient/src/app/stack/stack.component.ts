@@ -5,6 +5,7 @@ import { map, startWith } from 'rxjs/operators';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { SearchModel } from '../shared/models/SearchModel';
+import { StackService } from '../shared/services/stack.service';
 
 export interface State {
   flag: string;
@@ -87,7 +88,7 @@ export class StackComponent implements OnInit {
   ];
 
 
-  constructor() {
+  constructor(private sService: StackService) {
     this.dt = new Date();
     this.filteredStates = this.stateCtrl.valueChanges
       .pipe(
@@ -152,7 +153,10 @@ export class StackComponent implements OnInit {
   private _filterStates(value: string): State[] {
     const filterValue = value.toLowerCase();
     //Call the service
-      //TO DO -- call the backend
+    //TO DO -- call the backend
+    this.sService.search(filterValue).subscribe(response => {
+      console.log(response)
+    });
 
     return this.states.filter(state => state.name.toLowerCase().indexOf(filterValue) === 0);
   }

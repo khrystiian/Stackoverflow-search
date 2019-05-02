@@ -2,7 +2,7 @@
 using Nest;
 using System;
 
-namespace API
+namespace BusinessLayer
 {
     public class ElasticsearchImpl : IElasticsearch
     {
