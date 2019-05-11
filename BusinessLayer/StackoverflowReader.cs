@@ -1,14 +1,21 @@
-﻿using System;
-using System.Net.Http;
+﻿using Models;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using System.Text;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
+using Serilog;
 
 namespace BusinessLayer
 {
-    public class StackoverflowReader
+    public class StackoverflowReader : IStackoverflowReader
     {
+        private readonly IElasticsearch elasticsearch;
         private readonly string baseUrl = "https://api.stackexchange.com/2.2/";
-        private readonly string tags = "&tags/"; //for the related search
-        private readonly string related = "/related?"; //for the related search
+        //private readonly string tags = "&tags/"; //for the related search
+       // private readonly string related = "/related?"; //for the related search
 
         private readonly string advancedSearch = "search/advanced";
         private readonly string fromDate = "&fromdate="; //long format of date
@@ -16,27 +23,40 @@ namespace BusinessLayer
         private readonly string sort = "&sort="; //activity, relevance
         private readonly string order = "&order="; //asc, desc
         private readonly string page = "?page="; //number
-        private readonly string urlTail = "site=stackoverflow";
+        private readonly string urlTail = "&site=stackoverflow";
 
         //baseUrl + tag(user input) + from date/to date/order/sort/page/size(for page read until items list is empty)/related/advanced
 
-        public async Task InputRead(string inputOrder, string inputSort, string query, DateTime fromdate, string option)
+        public StackoverflowReader(IElasticsearch _elasticsearch)
         {
-            using (var httpClient = new HttpClient())
-            {
-                var mainSeachQueryJson = await httpClient.GetStringAsync(
-                    baseUrl+
-                    advancedSearch+
-                    page+
-                    sort+inputSort+
-                    order+inputOrder+
-                    fromDate+fromdate+
-                    tagged+query+
-                    urlTail
-                    );
+            elasticsearch = _elasticsearch ?? throw new ArgumentNullException(nameof(elasticsearch));
+        }
 
-                // Now parse with JSON.Net
+        public IList<Items> InputRead(SearchInput userInput)
+        {
+            string url = baseUrl+advancedSearch+page+sort+userInput.sort+order+userInput.order+fromDate+userInput.creationDate+tagged+userInput.query+urlTail;
+            IList<Items> items = new List<Items>();
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.KeepAlive = false;
+                request.AutomaticDecompression = DecompressionMethods.GZip;
+                request.ContentType = "application/json; charset=utf-8";
+                WebResponse response = request.GetResponse();
+
+                using (StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
+                {
+                    var result = reader.ReadToEnd();
+                    items = JsonConvert.DeserializeObject<RootJson>(result).items;
+                }
+                elasticsearch.NestIndexSearch(items);
             }
+            catch (Exception e)
+            {
+                Log.Fatal(e.Message);
+            }
+
+            return items;
         }
     }
 }

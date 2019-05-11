@@ -1,0 +1,178 @@
+2019-05-03 15:29:13.277 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 15:29:14.130 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 15:29:14.130 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 15:29:14.256 +02:00 [Information] Request finished in 110.1466ms 200 
+2019-05-03 15:29:14.513 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:29:14.537 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 15:29:14.626 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 109.0008ms
+2019-05-03 15:29:14.631 +02:00 [Information] Request finished in 504.2793ms 400 application/json; charset=utf-8
+2019-05-03 15:29:24.377 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 15:29:24.377 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:29:24.512 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 15:29:24.533 +02:00 [Information] In the controller!
+2019-05-03 15:29:30.079 +02:00 [Information] Executed action method "WebAPI.Controllers.StackController.Get (WebAPI)", returned result "Microsoft.AspNetCore.Mvc.EmptyResult" in 5564.5423ms.
+2019-05-03 15:29:30.084 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 5707.1081ms
+2019-05-03 15:29:30.089 +02:00 [Information] Request finished in 5711.8218ms 200 
+2019-05-03 15:31:41.433 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 15:31:42.230 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 15:31:42.230 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 15:31:42.280 +02:00 [Information] Request finished in 50.5768ms 200 
+2019-05-03 15:31:42.555 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:31:42.581 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 15:31:42.676 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 117.6406ms
+2019-05-03 15:31:42.681 +02:00 [Information] Request finished in 455.0793ms 400 application/json; charset=utf-8
+2019-05-03 15:32:57.366 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 15:32:57.385 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:32:57.484 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 15:32:57.500 +02:00 [Information] In the controller!
+2019-05-03 15:33:12.587 +02:00 [Information] Executed action method "WebAPI.Controllers.StackController.Get (WebAPI)", returned result "Microsoft.AspNetCore.Mvc.EmptyResult" in 15099.419ms.
+2019-05-03 15:33:12.593 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 15207.2322ms
+2019-05-03 15:33:12.597 +02:00 [Information] Request finished in 15240.0438ms 200 
+2019-05-03 15:36:02.131 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 15:36:02.801 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 15:36:02.801 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 15:36:02.838 +02:00 [Information] Request finished in 36.1378ms 200 
+2019-05-03 15:36:03.041 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:36:03.071 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 15:36:03.165 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 119.1902ms
+2019-05-03 15:36:03.170 +02:00 [Information] Request finished in 370.7194ms 400 application/json; charset=utf-8
+2019-05-03 15:36:11.328 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 15:36:11.329 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:36:11.427 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 15:36:11.469 +02:00 [Information] In the controller!
+2019-05-03 15:40:40.416 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 15:40:41.156 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 15:40:41.156 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 15:40:41.188 +02:00 [Information] Request finished in 34.174ms 200 
+2019-05-03 15:40:41.401 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:40:41.428 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 15:40:41.517 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 113.321ms
+2019-05-03 15:40:41.524 +02:00 [Information] Request finished in 372.3805ms 400 application/json; charset=utf-8
+2019-05-03 15:40:52.111 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 15:40:52.112 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:40:52.211 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 15:40:52.249 +02:00 [Information] In the controller!
+2019-05-03 15:40:52.995 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 883.2883ms
+2019-05-03 15:40:52.996 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: This property cannot be set after writing has started.
+   at System.Net.HttpWebRequest.set_AutomaticDecompression(DecompressionMethods value)
+   at BusinessLayer.StackoverflowReader.InputRead(SearchInput userInput) in D:\OneDrive - University College Nordjylland\UCN Aalborg\Visual Studio\StackoverflowSearch\BusinessLayer\StackoverflowReader.cs:line 53
+   at WebAPI.Controllers.StackController.Get(SearchInput userInput) in D:\OneDrive - University College Nordjylland\UCN Aalborg\Visual Studio\StackoverflowSearch\WebAPI\Controllers\StackController.cs:line 20
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03 15:40:53.182 +02:00 [Information] Request finished in 1071.0032ms 500 text/html; charset=utf-8
+2019-05-03 15:41:06.030 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 15:41:06.030 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:41:06.050 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 15:41:06.050 +02:00 [Information] In the controller!
+2019-05-03 15:42:10.620 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 15:42:11.509 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 15:42:11.509 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 15:42:11.549 +02:00 [Information] Request finished in 37.8202ms 200 
+2019-05-03 15:42:11.663 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 15:42:11.819 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:42:11.819 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 15:42:11.853 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 15:42:11.931 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 107.0323ms
+2019-05-03 15:42:11.937 +02:00 [Information] Request finished in 430.4685ms 400 application/json; charset=utf-8
+2019-05-03 15:42:12.023 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 15:42:12.071 +02:00 [Information] In the controller!
+2019-05-03 16:05:51.764 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 16:05:52.794 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 16:05:52.794 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 16:05:52.867 +02:00 [Information] Request finished in 49.0801ms 200 
+2019-05-03 16:05:53.491 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:05:53.538 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 16:05:53.924 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 428.0361ms
+2019-05-03 16:05:53.931 +02:00 [Information] Request finished in 1139.1278ms 400 application/json; charset=utf-8
+2019-05-03 16:08:30.670 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 16:08:30.671 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:08:30.919 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 16:08:31.029 +02:00 [Information] In the controller!
+2019-05-03 16:12:22.219 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 16:12:23.063 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 16:12:23.063 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 16:12:23.099 +02:00 [Information] Request finished in 35.7756ms 200 
+2019-05-03 16:12:23.340 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:12:23.366 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 16:12:23.524 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 179.6798ms
+2019-05-03 16:12:23.528 +02:00 [Information] Request finished in 467.9026ms 400 application/json; charset=utf-8
+2019-05-03 16:12:30.369 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 16:12:30.370 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:12:30.532 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 16:12:30.568 +02:00 [Information] In the controller!
+2019-05-03 16:16:24.817 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 16:16:25.780 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 16:16:25.780 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 16:16:25.780 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 16:16:25.820 +02:00 [Information] Request finished in 40.6783ms 200 
+2019-05-03 16:16:26.082 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:16:26.082 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:16:26.112 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 16:16:26.292 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 203.8348ms
+2019-05-03 16:16:26.303 +02:00 [Information] Request finished in 526.5858ms 400 application/json; charset=utf-8
+2019-05-03 16:16:26.424 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 16:16:26.471 +02:00 [Information] In the controller!
+2019-05-03 16:18:21.294 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 16:18:22.388 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 16:18:22.388 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 16:18:22.442 +02:00 [Information] Request finished in 53.8518ms 200 
+2019-05-03 16:18:22.538 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 16:18:22.847 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:18:22.847 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:18:22.879 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 16:18:23.036 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 183.9958ms
+2019-05-03 16:18:23.042 +02:00 [Information] Request finished in 657.6154ms 400 application/json; charset=utf-8
+2019-05-03 16:18:23.160 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 16:18:23.209 +02:00 [Information] In the controller!
+2019-05-03 16:19:48.977 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 16:19:49.776 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 16:19:49.776 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 16:19:49.809 +02:00 [Information] Request finished in 33.7399ms 200 
+2019-05-03 16:19:50.024 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:19:50.050 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 16:19:50.217 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 189.439ms
+2019-05-03 16:19:50.221 +02:00 [Information] Request finished in 447.8391ms 400 application/json; charset=utf-8
+2019-05-03 16:20:10.288 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 16:20:10.288 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:20:10.456 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 16:20:10.499 +02:00 [Information] In the controller!
+2019-05-03 16:21:08.837 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 16:21:09.847 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 16:21:09.847 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 16:21:09.847 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 16:21:09.895 +02:00 [Information] Request finished in 49.4167ms 200 
+2019-05-03 16:21:10.138 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:21:10.138 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:21:10.170 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 16:21:10.355 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 210.9583ms
+2019-05-03 16:21:10.361 +02:00 [Information] Request finished in 518.3767ms 400 application/json; charset=utf-8
+2019-05-03 16:21:10.491 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 16:21:10.535 +02:00 [Information] In the controller!
+2019-05-03 16:32:56.556 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-03 16:32:57.388 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-03 16:32:57.388 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-03 16:32:57.427 +02:00 [Information] Request finished in 39.2297ms 200 
+2019-05-03 16:32:57.656 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:32:57.688 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-03 16:32:57.851 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 191.8579ms
+2019-05-03 16:32:57.857 +02:00 [Information] Request finished in 472.4207ms 400 application/json; charset=utf-8
+2019-05-03 16:33:07.859 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack application/json 104
+2019-05-03 16:33:07.859 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-03 16:33:08.025 +02:00 [Information] Executing action method "WebAPI.Controllers.StackController.Get (WebAPI)" with arguments (["Models.SearchInput"]) - Validation state: Valid
+2019-05-03 16:33:08.061 +02:00 [Information] In the controller!

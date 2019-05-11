@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Serilog;
+using Serilog.Events;
 
 namespace WebAPI
 {
@@ -12,6 +14,12 @@ namespace WebAPI
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel
+                .Information()
+                .WriteTo.RollingFile("log-{Date}.txt", LogEventLevel.Information)
+                .WriteTo.Seq("http://localhost:5341/")
+                .CreateLogger();
         }
 
         public IConfiguration Configuration { get; }

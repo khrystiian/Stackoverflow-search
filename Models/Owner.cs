@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace Models
+﻿namespace Models
 {
     public class Owner
     {
-        public string DisplayName { get; set; }
-        public string Link { get; set; }
-        public string ReputationScore { get; set; }
-        public string ProfileImage { get; set; }
+        public string display_name { get; set; }
+        public string link { get; set; }
+        public string reputation { get; set; }
+        public string profile_image { get; set; }
     }
 }

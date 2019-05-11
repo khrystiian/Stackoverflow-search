@@ -1,42 +1,56 @@
 ﻿using Models;
 using Nest;
+using Serilog;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace BusinessLayer
 {
     public class ElasticsearchImpl : IElasticsearch
     {
-        public bool IndexToNestElasticsearch(IElasticClient client)
-        {
-            var tweet = new
-            {
-                Id = 1,
-                User = "kimchy",
-                PostDate = new DateTime(2009, 11, 15),
-                Message = "Trying out NEST, so far so good?"
-            };
+        private readonly IStackoverflowReader stack;
 
-            var indexResponse = client.Index(tweet, idx => idx.Index("mypersonindex"));
-            return indexResponse.IsValid;
+        public ElasticsearchImpl(IStackoverflowReader _stack)
+        {
+            stack = _stack ?? throw new ArgumentNullException(nameof(stack));
+        }
+
+        public bool IndexToNestElasticsearch(IElasticClient client, IList<Items> stackResults)
+        {
+            bool _indexResponse = false;
+            for (int i = 0; i < stackResults.Count; i++)
+            {
+                var indexResponse = client.Index(stackResults[i], idx => idx.Index("mypersonindex"));
+                _indexResponse = indexResponse.IsValid;
+
+                if (!indexResponse.IsValid)
+                {
+                    _indexResponse = indexResponse.IsValid;
+                    break;
+                }
+            }
+            return _indexResponse;
+
             // var response = client.Get<Tweet>(1, idx => idx.Index("mytweetindex")); // returns an IGetResponse mapped 1-to-1 with the Elasticsearch JSON response
             // Tweet newTweet = response.Source; // the original document
         }
 
         #region NEST
-        public void NestIndexSearch()
+        public void NestIndexSearch(IList<Items> stackResults)
         {
             var client = ElasticsearchMultiNodesConn.ElasticClient;
-            var successful = IndexToNestElasticsearch(client);
+            var successful = IndexToNestElasticsearch(client, stackResults);
             if (successful)
             {
-                var response = client.Search<SearchResult>(s => s
+                var response = client.Search<Items>(s => s
                                 .From(0) //results to skip
                                 .Size(10) //number of results
                                 .Query(q => q
-                                .Term(t => t.Tags, "vejle") || q     //to do
+                                .Term(t => t.tags, "signalr") || q     //to do ..
                                 .Match(mq => mq
-                                       .Field(f => f.Tags)
-                                       .Query("vejle"))
+                                       .Field(f => f.tags)
+                                       .Query("signalr"))
                                        )
                                 );
             }
@@ -45,7 +59,7 @@ namespace BusinessLayer
         public void NestIndexSearch2()
         {
             var client = ElasticsearchMultiNodesConn.ElasticClient;
-            var succesful = IndexToNestElasticsearch(client);
+            var succesful = true; //IndexToNestElasticsearch(client);
             if (succesful)
             {
                 var request = new SearchRequest
@@ -56,7 +70,7 @@ namespace BusinessLayer
                                                                                          //new MatchQuery { Field = "description", Query = "nest" }
                 };
 
-                var response = client.Search<SearchResult>(request);
+                var response = client.Search<Items>(request);
             }
         }
             #endregion
