@@ -26,9 +26,7 @@
               "src/styles.css",
               "node_modules/simple-keyboard/build/css/index.css"
             ],
-            "scripts": [
-              "src/assets/js/mottie-keyboard.js"
-            ],
+            "scripts": [],
             "es5BrowserSupport": true
           },
           "configurations": {
