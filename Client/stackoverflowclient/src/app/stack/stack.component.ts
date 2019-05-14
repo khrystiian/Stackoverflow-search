@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import Keyboard from "simple-keyboard";
 import { MatRadioChange } from '@angular/material';
 import { map, startWith } from 'rxjs/operators';
@@ -98,7 +98,7 @@ export class StackComponent implements OnInit  {
   }
 
   ngOnInit() {
-    this.searchModel = {
+      this.searchModel = {
       orderResults: this.orderList[0],
       sortResults: this.sortList[0],
       searchOption: this.optionList[1],
@@ -109,13 +109,47 @@ export class StackComponent implements OnInit  {
 
     this.keyboard = new Keyboard({
       preventMouseDownDefault: true,
-      debug: true,
-      syncInstanceInputs: false,
-      disableCaretPositioning: false,
-      onChange: input =>  this.onChange(input),
+      onChange: input => this.onChange(input),
       onKeyPress: button => this.onKeyPress(button)
     });
   }
+
+  onChange = (input: string) => {
+    this.value = input;
+    this.searchModel.userInput = this.value;
+    document.getElementById("searchInput").focus();
+    this._filterStates(this.value);
+    console.log("key change "+ this.filteredStates)
+
+
+  };
+
+  onKeyPress = (button: string) => {
+    document.getElementById("searchInput").focus();
+
+    /**
+     * If you want to handle the shift and caps lock buttons
+     */
+    if (button === "{shift}" || button === "{lock}") this.handleShift();
+  };
+
+  onInputChange = (event: any) => {
+    this.keyboard.setInput(event.target.value);
+    document.getElementById("searchInput").focus();
+    this._filterStates(event.target.value);
+    console.log(this.filteredStates)
+
+  };
+
+  handleShift = () => {
+    let currentLayout = this.keyboard.options.layoutName;
+    let shiftToggle = currentLayout === "default" ? "shift" : "default";
+
+    this.keyboard.setOptions({
+      layoutName: shiftToggle
+    });
+  };
+
 
 
   //section virtual keyboard
@@ -127,42 +161,19 @@ export class StackComponent implements OnInit  {
     } else {
       el.hidden = true;
     }
+    document.getElementById("searchInput").focus();
   }
-
-  onChange = (input: string) => {
-    this.value = input;
-    document.getElementById("searchInput").focus();
-
-    //console.log("Input changed", input);
-  };
-
-  onKeyPress = (button: string) => {
-    document.getElementById("searchInput").focus();
-
-    //console.log("Button pressed", button);
-     //If you want to handle the shift and caps lock buttons
-    if (button === "{shift}" || button === "{lock}") this.handleShift();
-  };
-
-  handleShift = () => {
-    let currentLayout = this.keyboard.options.layoutName;
-    let shiftToggle = currentLayout === "default" ? "shift" : "default";
-
-    this.keyboard.setOptions({
-      layoutName: shiftToggle
-    });
-  };
   //end section virtual keyboard
 
 
   //section search bar typing
   private _filterStates(value: string): State[] {
+    this.value = value;
     const filterValue = value.toLowerCase();
-    //Call the service
     //TO DO -- call the backend
-    this.sService.search(filterValue).subscribe(response => {
-      console.log(response)
-    });
+    //this.sService.search(filterValue).subscribe(response => {
+     // console.log(response)
+    //});
 
     return this.states.filter(state => state.name.toLowerCase().indexOf(filterValue) === 0);
   }
@@ -185,10 +196,6 @@ export class StackComponent implements OnInit  {
 
   creationDate(event: Date) {
     this.searchModel.creationDate = event;
-    console.log(this.searchModel)
-  }
-  onInputChange($event: any) {
-    this.searchModel.userInput = $event.target.value;
     console.log(this.searchModel)
   }
   //end section search options 

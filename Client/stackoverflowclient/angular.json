@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "defaultProject": "stackoverflowclient",
   "newProjectRoot": "projects",
   "projects": {
     "stackoverflowclient": {
@@ -26,7 +26,9 @@
               "src/styles.css",
               "node_modules/simple-keyboard/build/css/index.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/mottie-keyboard.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -133,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "stackoverflowclient"
+  "version": 1
 }
