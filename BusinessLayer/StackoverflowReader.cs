@@ -1,15 +1,18 @@
 ﻿using Models;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Net;
+using System.Linq;
 using System.Text;
-using Newtonsoft.Json;
-using System.Threading.Tasks;
+using Elasticsearch.Net;
 using Serilog;
+using System.Net;
+using System.IO;
+using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace BusinessLayer
 {
+
     public class StackoverflowReader : IStackoverflowReader
     {
         private readonly IElasticsearch elasticsearch;
@@ -49,11 +52,12 @@ namespace BusinessLayer
                     var result = reader.ReadToEnd();
                     items = JsonConvert.DeserializeObject<RootJson>(result).items;
                 }
-                elasticsearch.NestIndexSearch(items);
+                elasticsearch.SearchResult(items);
             }
             catch (Exception e)
             {
-                Log.Fatal(e.Message);
+                Log.Information("ERROR "+e);
+                Debug.WriteLine(e);
             }
 
             return items;

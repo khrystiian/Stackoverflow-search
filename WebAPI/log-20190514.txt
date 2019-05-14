@@ -1,0 +1,241 @@
+2019-05-14 14:52:35.391 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-14 14:52:35.734 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 14:52:35.757 +02:00 [Information] Policy execution failed.
+2019-05-14 14:52:35.757 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:52:35.906 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:52:35.937 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:52:36.096 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 186.2633ms
+2019-05-14 14:52:36.103 +02:00 [Information] Request finished in 371.3093ms 400 application/json; charset=utf-8
+2019-05-14 14:52:41.250 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=aa  
+2019-05-14 14:52:41.251 +02:00 [Information] Policy execution failed.
+2019-05-14 14:52:41.251 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:52:41.251 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:52:41.252 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:52:41.252 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.9478ms
+2019-05-14 14:52:41.252 +02:00 [Information] Request finished in 2.0248ms 400 application/json; charset=utf-8
+2019-05-14 14:52:42.412 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 14:52:42.412 +02:00 [Information] Policy execution failed.
+2019-05-14 14:52:42.412 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:52:42.412 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:52:42.413 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:52:42.413 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.3368ms
+2019-05-14 14:52:42.413 +02:00 [Information] Request finished in 0.7423ms 400 application/json; charset=utf-8
+2019-05-14 14:52:44.320 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=c  
+2019-05-14 14:52:44.320 +02:00 [Information] Policy execution failed.
+2019-05-14 14:52:44.320 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:52:44.320 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:52:44.320 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:52:44.321 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2947ms
+2019-05-14 14:52:44.321 +02:00 [Information] Request finished in 0.8728ms 400 application/json; charset=utf-8
+2019-05-14 14:52:45.897 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=t  
+2019-05-14 14:52:45.898 +02:00 [Information] Policy execution failed.
+2019-05-14 14:52:45.898 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:52:45.898 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:52:45.898 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:52:45.898 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.3149ms
+2019-05-14 14:52:45.898 +02:00 [Information] Request finished in 0.9705ms 400 application/json; charset=utf-8
+2019-05-14 14:52:47.205 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 14:52:47.205 +02:00 [Information] Policy execution failed.
+2019-05-14 14:52:47.205 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:52:47.205 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:52:47.205 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:52:47.205 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2396ms
+2019-05-14 14:52:47.205 +02:00 [Information] Request finished in 0.8331ms 400 application/json; charset=utf-8
+2019-05-14 14:53:02.809 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=arkansas  
+2019-05-14 14:53:02.809 +02:00 [Information] Policy execution failed.
+2019-05-14 14:53:02.809 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:53:02.810 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:53:02.810 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:53:02.810 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.3103ms
+2019-05-14 14:53:02.810 +02:00 [Information] Request finished in 0.9821ms 400 application/json; charset=utf-8
+2019-05-14 14:53:06.805 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=arkansa  
+2019-05-14 14:53:06.805 +02:00 [Information] Policy execution failed.
+2019-05-14 14:53:06.805 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:53:06.805 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:53:06.805 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:53:06.806 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2355ms
+2019-05-14 14:53:06.806 +02:00 [Information] Request finished in 0.6532ms 400 application/json; charset=utf-8
+2019-05-14 14:53:07.005 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=arkans  
+2019-05-14 14:53:07.005 +02:00 [Information] Policy execution failed.
+2019-05-14 14:53:07.005 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:53:07.005 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:53:07.005 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:53:07.005 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2183ms
+2019-05-14 14:53:07.005 +02:00 [Information] Request finished in 0.619ms 400 application/json; charset=utf-8
+2019-05-14 14:53:07.179 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=arkan  
+2019-05-14 14:53:07.180 +02:00 [Information] Policy execution failed.
+2019-05-14 14:53:07.180 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:53:07.180 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:53:07.180 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:53:07.180 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2234ms
+2019-05-14 14:53:07.180 +02:00 [Information] Request finished in 0.6845ms 400 application/json; charset=utf-8
+2019-05-14 14:53:07.324 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=arka  
+2019-05-14 14:53:07.324 +02:00 [Information] Policy execution failed.
+2019-05-14 14:53:07.324 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:53:07.324 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:53:07.324 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:53:07.324 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2326ms
+2019-05-14 14:53:07.324 +02:00 [Information] Request finished in 0.6359ms 400 application/json; charset=utf-8
+2019-05-14 14:53:07.474 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=ark  
+2019-05-14 14:53:07.475 +02:00 [Information] Policy execution failed.
+2019-05-14 14:53:07.475 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:53:07.475 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:53:07.475 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:53:07.475 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2708ms
+2019-05-14 14:53:07.475 +02:00 [Information] Request finished in 0.6641ms 400 application/json; charset=utf-8
+2019-05-14 14:53:07.692 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=ar  
+2019-05-14 14:53:07.692 +02:00 [Information] Policy execution failed.
+2019-05-14 14:53:07.692 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:53:07.692 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:53:07.692 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:53:07.692 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2289ms
+2019-05-14 14:53:07.692 +02:00 [Information] Request finished in 0.6495ms 400 application/json; charset=utf-8
+2019-05-14 14:53:07.796 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 14:53:07.796 +02:00 [Information] Policy execution failed.
+2019-05-14 14:53:07.796 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:53:07.796 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:53:07.796 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:53:07.796 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2901ms
+2019-05-14 14:53:07.796 +02:00 [Information] Request finished in 0.7005ms 400 application/json; charset=utf-8
+2019-05-14 14:54:15.209 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 14:54:15.209 +02:00 [Information] Policy execution failed.
+2019-05-14 14:54:15.209 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:54:15.209 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:54:15.210 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:54:15.210 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.6421ms
+2019-05-14 14:54:15.210 +02:00 [Information] Request finished in 1.4508ms 400 application/json; charset=utf-8
+2019-05-14 14:54:15.388 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=ar  
+2019-05-14 14:54:15.388 +02:00 [Information] Policy execution failed.
+2019-05-14 14:54:15.388 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 14:54:15.388 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 14:54:15.388 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 14:54:15.388 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2253ms
+2019-05-14 14:54:15.388 +02:00 [Information] Request finished in 0.5701ms 400 application/json; charset=utf-8
+2019-05-14 15:00:21.485 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 15:00:21.486 +02:00 [Information] Policy execution failed.
+2019-05-14 15:00:21.486 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:00:21.486 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:00:21.486 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:00:21.486 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.4435ms
+2019-05-14 15:00:21.486 +02:00 [Information] Request finished in 1.0869ms 400 application/json; charset=utf-8
+2019-05-14 15:00:22.646 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=h  
+2019-05-14 15:00:22.647 +02:00 [Information] Policy execution failed.
+2019-05-14 15:00:22.647 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:00:22.647 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:00:22.647 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:00:22.647 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.4644ms
+2019-05-14 15:00:22.648 +02:00 [Information] Request finished in 1.0988ms 400 application/json; charset=utf-8
+2019-05-14 15:08:31.383 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-14 15:08:32.408 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack  
+2019-05-14 15:08:32.408 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55042/  0
+2019-05-14 15:08:32.459 +02:00 [Information] Request finished in 43.6704ms 200 
+2019-05-14 15:08:32.702 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:08:32.744 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:08:32.974 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 268.1608ms
+2019-05-14 15:08:32.981 +02:00 [Information] Request finished in 575.8044ms 400 application/json; charset=utf-8
+2019-05-14 15:11:32.104 +02:00 [Information] User profile is available. Using '"C:\Users\andyc\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-14 15:11:32.423 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=s  
+2019-05-14 15:11:32.435 +02:00 [Information] Policy execution failed.
+2019-05-14 15:11:32.436 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:11:32.533 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:11:32.554 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:11:32.665 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 128.739ms
+2019-05-14 15:11:32.670 +02:00 [Information] Request finished in 247.6345ms 400 application/json; charset=utf-8
+2019-05-14 15:21:52.242 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=asxxxxxx  
+2019-05-14 15:21:52.242 +02:00 [Information] Policy execution failed.
+2019-05-14 15:21:52.243 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:21:52.243 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:21:52.244 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:21:52.244 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 1.3428ms
+2019-05-14 15:21:52.245 +02:00 [Information] Request finished in 2.5302ms 400 application/json; charset=utf-8
+2019-05-14 15:21:52.657 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=asxxxxx  
+2019-05-14 15:21:52.657 +02:00 [Information] Policy execution failed.
+2019-05-14 15:21:52.657 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:21:52.657 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:21:52.657 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:21:52.657 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.4124ms
+2019-05-14 15:21:52.657 +02:00 [Information] Request finished in 0.9944ms 400 application/json; charset=utf-8
+2019-05-14 15:23:11.277 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 15:23:11.277 +02:00 [Information] Policy execution failed.
+2019-05-14 15:23:11.277 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:23:11.277 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:23:11.277 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:23:11.278 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.4073ms
+2019-05-14 15:23:11.278 +02:00 [Information] Request finished in 0.9103ms 400 application/json; charset=utf-8
+2019-05-14 15:23:15.597 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=ar  
+2019-05-14 15:23:15.598 +02:00 [Information] Policy execution failed.
+2019-05-14 15:23:15.598 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:23:15.598 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:23:15.598 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:23:15.598 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.467ms
+2019-05-14 15:23:15.598 +02:00 [Information] Request finished in 1.1173ms 400 application/json; charset=utf-8
+2019-05-14 15:27:03.327 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 15:27:03.327 +02:00 [Information] Policy execution failed.
+2019-05-14 15:27:03.327 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:27:03.328 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:27:03.328 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:27:03.328 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.4301ms
+2019-05-14 15:27:03.328 +02:00 [Information] Request finished in 1.0455ms 400 application/json; charset=utf-8
+2019-05-14 15:27:05.074 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=ar  
+2019-05-14 15:27:05.074 +02:00 [Information] Policy execution failed.
+2019-05-14 15:27:05.074 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:27:05.074 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:27:05.074 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:27:05.075 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.4019ms
+2019-05-14 15:27:05.075 +02:00 [Information] Request finished in 1.1437ms 400 application/json; charset=utf-8
+2019-05-14 15:27:06.392 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 15:27:06.392 +02:00 [Information] Policy execution failed.
+2019-05-14 15:27:06.392 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:27:06.392 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:27:06.393 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:27:06.393 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2782ms
+2019-05-14 15:27:06.393 +02:00 [Information] Request finished in 0.7993ms 400 application/json; charset=utf-8
+2019-05-14 15:35:58.735 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 15:35:58.735 +02:00 [Information] Policy execution failed.
+2019-05-14 15:35:58.735 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:35:58.735 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:35:58.736 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:35:58.736 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.5147ms
+2019-05-14 15:35:58.736 +02:00 [Information] Request finished in 1.3135ms 400 application/json; charset=utf-8
+2019-05-14 15:35:59.399 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 15:35:59.399 +02:00 [Information] Policy execution failed.
+2019-05-14 15:35:59.399 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:35:59.399 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:35:59.400 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:35:59.400 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.483ms
+2019-05-14 15:35:59.400 +02:00 [Information] Request finished in 1.3349ms 400 application/json; charset=utf-8
+2019-05-14 15:35:59.576 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=ar  
+2019-05-14 15:35:59.576 +02:00 [Information] Policy execution failed.
+2019-05-14 15:35:59.576 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:35:59.577 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:35:59.577 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:35:59.577 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.4616ms
+2019-05-14 15:35:59.577 +02:00 [Information] Request finished in 0.9876ms 400 application/json; charset=utf-8
+2019-05-14 15:36:00.431 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 15:36:00.431 +02:00 [Information] Policy execution failed.
+2019-05-14 15:36:00.431 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:36:00.431 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:36:00.431 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:36:00.432 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.3331ms
+2019-05-14 15:36:00.432 +02:00 [Information] Request finished in 1.1316ms 400 application/json; charset=utf-8
+2019-05-14 15:36:01.410 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=a  
+2019-05-14 15:36:01.410 +02:00 [Information] Policy execution failed.
+2019-05-14 15:36:01.410 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:36:01.410 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:36:01.410 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:36:01.410 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.2336ms
+2019-05-14 15:36:01.410 +02:00 [Information] Request finished in 0.6743ms 400 application/json; charset=utf-8
+2019-05-14 15:36:13.269 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=ar  
+2019-05-14 15:36:13.270 +02:00 [Information] Policy execution failed.
+2019-05-14 15:36:13.270 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:36:13.270 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:36:13.270 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:36:13.270 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.3102ms
+2019-05-14 15:36:13.270 +02:00 [Information] Request finished in 0.8049ms 400 application/json; charset=utf-8
+2019-05-14 15:36:18.869 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/stack?get=ars  
+2019-05-14 15:36:18.870 +02:00 [Information] Policy execution failed.
+2019-05-14 15:36:18.870 +02:00 [Information] Request origin "http://localhost:4200" does not have permission to access the resource.
+2019-05-14 15:36:18.870 +02:00 [Information] Route matched with "{action = \"Get\", controller = \"Stack\"}". Executing action "WebAPI.Controllers.StackController.Get (WebAPI)"
+2019-05-14 15:36:18.870 +02:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2019-05-14 15:36:18.870 +02:00 [Information] Executed action "WebAPI.Controllers.StackController.Get (WebAPI)" in 0.225ms
+2019-05-14 15:36:18.870 +02:00 [Information] Request finished in 0.6489ms 400 application/json; charset=utf-8

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using BusinessLayer;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -28,6 +29,9 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
+            services.AddSingleton<IStackoverflowReader, StackoverflowReader>();
+            services.AddSingleton<IElasticsearch, ElasticsearchImpl>();
 
             services.AddCors(options =>
             {

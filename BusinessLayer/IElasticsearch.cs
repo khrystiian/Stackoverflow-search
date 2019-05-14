@@ -7,7 +7,6 @@ namespace BusinessLayer
     public interface IElasticsearch
     {
         bool IndexToNestElasticsearch(IElasticClient client, IList<Items> stackResults);
-        void NestIndexSearch(IList<Items> stackResults);
-        void NestIndexSearch2();
+        void SearchResult(IList<Items> stackResults);
     }
 }

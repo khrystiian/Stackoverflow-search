@@ -22,7 +22,7 @@ namespace WebAPI.Controllers
         [HttpGet]
         public IList<Items> Get(SearchInput userInput)
         {
-            Log.Information("In the controller!");
+            Log.Information("In the controller!....");
             return stack.InputRead(userInput);
         }
 

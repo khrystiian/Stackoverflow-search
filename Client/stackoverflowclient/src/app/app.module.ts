@@ -19,6 +19,9 @@ import {
   MatCardModule,
   MatSlideToggleModule
 } from '@angular/material';
+import { HttpErrorHandler } from './shared/services/http-error-handler.service';
+import { HttpClientModule, /* other http imports */ } from "@angular/common/http";
+import { MessageService } from './shared/services/message.service';
 
 
 @NgModule({
@@ -30,8 +33,9 @@ import {
     BrowserModule,
     MatRadioModule,
     DragDropModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     MatDatepickerModule,
     MatInputModule,
@@ -42,7 +46,7 @@ import {
     MatCheckboxModule,
     MatSlideToggleModule
   ],
-  providers: [MatDatepickerModule],
+  providers: [MatDatepickerModule, HttpErrorHandler, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,6 +5,6 @@ namespace BusinessLayer
 {
     public interface IStackoverflowReader
     {
-        IList<Items> InputRead(SearchInput userInput)
+        IList<Items> InputRead(SearchInput userInput);
     }
 }

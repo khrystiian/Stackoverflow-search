@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ElementRef, AfterViewInit } from '@angular/core';
 import Keyboard from "simple-keyboard";
 import { MatRadioChange } from '@angular/material';
 import { map, startWith } from 'rxjs/operators';
@@ -18,7 +18,7 @@ export interface State {
   encapsulation: ViewEncapsulation.None,
   styleUrls: ['./stack.component.css']
 })
-export class StackComponent implements OnInit {
+export class StackComponent implements OnInit  {
   dt: Date;
   showKeyboard: boolean;
   searchModel: SearchModel;
@@ -108,9 +108,11 @@ export class StackComponent implements OnInit {
     this.showKeyboard = false;
 
     this.keyboard = new Keyboard({
-      onChange: input => {
-        this.onChange(input)
-      },
+      preventMouseDownDefault: true,
+      debug: true,
+      syncInstanceInputs: false,
+      disableCaretPositioning: false,
+      onChange: input =>  this.onChange(input),
       onKeyPress: button => this.onKeyPress(button)
     });
   }
@@ -120,7 +122,6 @@ export class StackComponent implements OnInit {
   openVirtualKeyboard() {
     this.showKeyboard = !this.showKeyboard;
     const el: HTMLElement = document.getElementById("simpleVirtualKeyboard");
-
     if (this.showKeyboard) {
       el.hidden = false;
     } else {
@@ -130,14 +131,19 @@ export class StackComponent implements OnInit {
 
   onChange = (input: string) => {
     this.value = input;
-    console.log("Input changed", input);
-  };
-  onKeyPress = (button: string) => {
-    console.log("Button pressed", button);
+    document.getElementById("searchInput").focus();
 
+    //console.log("Input changed", input);
+  };
+
+  onKeyPress = (button: string) => {
+    document.getElementById("searchInput").focus();
+
+    //console.log("Button pressed", button);
      //If you want to handle the shift and caps lock buttons
     if (button === "{shift}" || button === "{lock}") this.handleShift();
   };
+
   handleShift = () => {
     let currentLayout = this.keyboard.options.layoutName;
     let shiftToggle = currentLayout === "default" ? "shift" : "default";
