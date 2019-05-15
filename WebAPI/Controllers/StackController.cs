@@ -1,9 +1,8 @@
 ﻿using BusinessLayer;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Models;
-using Serilog;
 using System;
-using System.Collections.Generic;
 
 namespace WebAPI.Controllers
 {
@@ -11,26 +10,22 @@ namespace WebAPI.Controllers
     [ApiController]
     public class StackController : ControllerBase
     {
-        private readonly IStackoverflowReader stack;
+        private readonly IElasticsearch eSearch;
 
-        public StackController(IStackoverflowReader _stack)
-        {
-            stack = _stack ?? throw new ArgumentNullException(nameof(stack));
-        }
+        public StackController(IElasticsearch _eSearch) => eSearch = _eSearch ?? throw new ArgumentNullException(nameof(eSearch));
 
         // GET api/values/5
-        [HttpGet]
-        public IList<Items> Get(SearchInput userInput)
-        {
-            Log.Information("In the controller!....");
-            return stack.InputRead(userInput);
-        }
-
-        // POST api/values
+        [EnableCors]
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ResultModel Post([FromBody]SearchModel userInput)
         {
+            return eSearch.SearchOnELK(userInput);
         }
-
+    
+        [HttpGet]
+        public string Get()
+        {
+            return "value1, value2";
+        }
     }
 }

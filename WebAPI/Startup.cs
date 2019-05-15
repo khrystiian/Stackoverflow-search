@@ -11,10 +11,10 @@ namespace WebAPI
 {
     public class Startup
     {
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            //SERILOG - API and File 
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel
                 .Information()
@@ -28,19 +28,19 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            
-            services.AddSingleton<IStackoverflowReader, StackoverflowReader>();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);  
             services.AddSingleton<IElasticsearch, ElasticsearchImpl>();
+            services.AddSingleton<IStackoverflowReader, StackoverflowReader>();
 
             services.AddCors(options =>
             {
-                options.AddPolicy(MyAllowSpecificOrigins,
+                options.AddDefaultPolicy(
                 builder =>
                 {
-                    builder.WithOrigins("https://localhost:44344/")
-                                        .AllowAnyHeader()
-                                        .AllowAnyMethod(); 
+                    builder.AllowAnyHeader()
+                           .AllowAnyOrigin()
+                           .AllowCredentials()
+                           .AllowAnyMethod(); 
                 });
             });
         }
@@ -48,6 +48,8 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -56,7 +58,6 @@ namespace WebAPI
             {
                 app.UseHsts();
             }
-            app.UseCors(MyAllowSpecificOrigins);
             app.UseHttpsRedirection();
             app.UseMvc();
         }

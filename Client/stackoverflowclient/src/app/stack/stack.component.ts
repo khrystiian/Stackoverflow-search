@@ -119,7 +119,7 @@ export class StackComponent implements OnInit  {
     this.searchModel.userInput = this.value;
     document.getElementById("searchInput").focus();
     this._filterStates(this.value);
-    console.log("key change "+ this.filteredStates)
+    //console.log("key change "+ this.filteredStates)
 
 
   };
@@ -127,17 +127,17 @@ export class StackComponent implements OnInit  {
   onKeyPress = (button: string) => {
     document.getElementById("searchInput").focus();
 
-    /**
-     * If you want to handle the shift and caps lock buttons
-     */
+     //If you want to handle the shift and caps lock buttons
     if (button === "{shift}" || button === "{lock}") this.handleShift();
   };
 
   onInputChange = (event: any) => {
     this.keyboard.setInput(event.target.value);
+    this.searchModel.userInput = event.target.value;
+
     document.getElementById("searchInput").focus();
     this._filterStates(event.target.value);
-    console.log(this.filteredStates)
+   // console.log(this.filteredStates)
 
   };
 
@@ -171,9 +171,9 @@ export class StackComponent implements OnInit  {
     this.value = value;
     const filterValue = value.toLowerCase();
     //TO DO -- call the backend
-    //this.sService.search(filterValue).subscribe(response => {
-     // console.log(response)
-    //});
+    this.sService.search(this.searchModel).subscribe(response => {
+      console.log(response)
+    });
 
     return this.states.filter(state => state.name.toLowerCase().indexOf(filterValue) === 0);
   }
@@ -183,20 +183,20 @@ export class StackComponent implements OnInit  {
   //section search options
   orderChange($event: MatRadioChange) {
     this.searchModel.orderResults = $event.value;
-    console.log(this.searchModel)
+    //console.log(this.searchModel)
   }
   sortChange($event: MatRadioChange) {
     this.searchModel.sortResults = $event.value;
-    console.log(this.searchModel)
+    //console.log(this.searchModel)
   }
   optionChange($event: MatRadioChange) {
     this.searchModel.searchOption = $event.value;
-    console.log(this.searchModel)
+    //console.log(this.searchModel)
   }
 
   creationDate(event: Date) {
     this.searchModel.creationDate = event;
-    console.log(this.searchModel)
+   // console.log(this.searchModel)
   }
   //end section search options 
 

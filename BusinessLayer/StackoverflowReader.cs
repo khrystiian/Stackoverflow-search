@@ -1,9 +1,7 @@
 ﻿using Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using Elasticsearch.Net;
 using Serilog;
 using System.Net;
 using System.IO;
@@ -12,10 +10,8 @@ using System.Diagnostics;
 
 namespace BusinessLayer
 {
-
     public class StackoverflowReader : IStackoverflowReader
     {
-        private readonly IElasticsearch elasticsearch;
         private readonly string baseUrl = "https://api.stackexchange.com/2.2/";
         //private readonly string tags = "&tags/"; //for the related search
        // private readonly string related = "/related?"; //for the related search
@@ -27,18 +23,26 @@ namespace BusinessLayer
         private readonly string order = "&order="; //asc, desc
         private readonly string page = "?page="; //number
         private readonly string urlTail = "&site=stackoverflow";
-
         //baseUrl + tag(user input) + from date/to date/order/sort/page/size(for page read until items list is empty)/related/advanced
-
-        public StackoverflowReader(IElasticsearch _elasticsearch)
+        
+        /// <summary>
+        /// Search for result in Stackoverflow website using API.
+        /// Plays the role of database for the elasticsearch engine.
+        /// In real life scenario, data should already exist in the Elasticsearch, and the search should be performed only on ELK search engine.
+        /// </summary>
+        /// <param name="userInput"></param>
+        /// <returns></returns>
+        public IList<Items> InputRead(SearchModel userInput)
         {
-            elasticsearch = _elasticsearch ?? throw new ArgumentNullException(nameof(elasticsearch));
-        }
-
-        public IList<Items> InputRead(SearchInput userInput)
-        {
-            string url = baseUrl+advancedSearch+page+sort+userInput.sort+order+userInput.order+fromDate+userInput.creationDate+tagged+userInput.query+urlTail;
             IList<Items> items = new List<Items>();
+            ResultModel queryResult = new ResultModel();
+            string url = baseUrl+advancedSearch+page+
+                sort+userInput.sortResults+
+                order+userInput.orderResults+
+                fromDate+userInput.creationDate+
+                tagged+userInput.userInput+
+                urlTail;       
+
             try
             {
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
@@ -50,13 +54,12 @@ namespace BusinessLayer
                 using (StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
                 {
                     var result = reader.ReadToEnd();
-                    items = JsonConvert.DeserializeObject<RootJson>(result).items;
+                    items = JsonConvert.DeserializeObject<StackResultModel>(result).items;
                 }
-                elasticsearch.SearchResult(items);
             }
             catch (Exception e)
             {
-                Log.Information("ERROR "+e);
+                Log.Information("Error in Stackoverflow API "+e);
                 Debug.WriteLine(e);
             }
 
