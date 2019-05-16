@@ -28,16 +28,7 @@ export class StackService {
   }
 
   search(search: SearchModel): Observable<any> {
-    console.log(search);
     return this.http.post<SearchModel>(this.url + "api/stack", search, httpOptions).pipe(catchError(this.handleError('search', search)));
   }
 
-
-  //addPassenger(user: Passenger): Observable<Passenger> {
-  //  this.navBarUsername.next(user.Email);
-  //  var result = this.http.post<Passenger>(this.url + "api/passenger", user, httpOptions)
-  //    .pipe(catchError(this.handleError('addPassenger', user))
-  //    );
-  //  return result;
-  //}
 }

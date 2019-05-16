@@ -1,0 +1,79 @@
+GET /_cat/health?v
+GET /_cat/indices?v
+GET /stackoverflowindex/_search?q=signalr
+GET localhost:9200
+
+
+#Index n-grams for search-as-you-type
+#1.Create an "autocomplete analyzer"
+#2.Map the analyzer to a new index
+PUT /stackoverflowindex?include_type_name=true
+{
+  "settings": {
+    "analysis": {
+      "filter": {
+        "autocomplete_filter":{
+          "type": "edge_ngram",
+          "min_gram":1,
+          "max_gram":20
+        }
+      },
+      "analyzer": {
+        "autocomplete":{
+          "type":"custom",
+          "tokenizer":"standard",
+          "filter":[
+            "lowercase",
+            "autocomplete_filter"
+            ]
+        }
+      }
+    }
+  }
+}
+
+#3.Test analyzer called "autocomplete"
+POST stackoverflowindex/_analyze
+{
+  "analyzer": "autocomplete",
+  "text":     "angular"
+}
+
+
+#4.Map analyzer to the index
+PUT /stackoverflowindex/_mapping/item?include_type_name=true
+{
+  "item": {
+    "properties":  {
+        "tags": {
+        "type": "text",
+        "analyzer": "autocomplete" 
+          }
+      }
+    }
+  }
+
+
+#5.Reindex from source index to dest index
+POST _reindex
+{
+  "source": {
+    "index": "stackindex"
+  },
+  "dest": {
+    "index": "stackoverflowindex"
+  }
+}
+
+#6.Test search in the new index
+GET /stackoverflowindex/_search?pretty
+{
+  "query": {
+    "match": {
+      "tags": {
+        "query": "angular",
+        "analyzer": "autocomplete"
+      }
+    }
+  }
+}

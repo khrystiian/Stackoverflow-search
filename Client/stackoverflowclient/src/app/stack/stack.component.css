@@ -54,3 +54,10 @@ inputKeyboard {
   width: 12px;
   height: 12px;
 }
+
+.limited-text {
+  white-space: nowrap;
+  width: 700px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
